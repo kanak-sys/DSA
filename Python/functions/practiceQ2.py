@@ -6,6 +6,13 @@ using a loop
 no ** operator or pow is allowed
 """
 def power(base, exp):
-    return base**exp
-result = power(2, 4)
+    
+    i = 1
+    start = 1
+    while i<=exp:
+        start = start * base
+        i += 1
+    return start
+
+result = power(9, 4)
 print(result)
