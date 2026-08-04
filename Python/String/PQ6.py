@@ -4,4 +4,12 @@
 #and atleast one .
 #print valid or invalid
 
-mail = input("Enter ur mail id")
+
+def check_mail(mail:str):
+    if "." in mail and mail.count("@") == 1 :
+        print("valid")
+    else:
+        print("Not valid") 
+
+mail = input("Enter ur mail id: ")
+check_mail(mail)
